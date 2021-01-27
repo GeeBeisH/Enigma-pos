@@ -6,9 +6,13 @@ const isDev = !app.isPackaged;
 
 function createWindow() {
   const win = new BrowserWindow({
-    width: 1200,
-    height: 800,
-    backgroundColor: "white",
+    hasShadow: true,
+    movable: true,
+    closable: true,
+    alwaysOnTop: true,
+    autoHideMenuBar: true,
+    fullscreen: false,
+    backgroundColor: "#98c4c4",
     webPreferences: {
       nodeIntegration: false,
       worldSafeExecuteJavaScript: true,
@@ -27,7 +31,7 @@ if (isDev) {
 }
 
 ipcMain.on('notify', (_, message) => {
-  new Notification({title: 'Notifiation', body: message}).show();
+  new Notification({title: 'Notification', body: message}).show();
 })
 
 app.whenReady().then(createWindow)
