@@ -9,7 +9,7 @@
     "start": "electron ."
   },
   "keywords": [],
-  "author": "",
+  "author": "Chris Wessels",
   "license": "ISC",
   "dependencies": {
     "electron": "^10.1.2",

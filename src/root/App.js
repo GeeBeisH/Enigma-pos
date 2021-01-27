@@ -1,12 +1,11 @@
 
 import React from 'react';
+import MainView from '../user_components/mainView'
 
 
 export default function App() {
 
   return (
-    <>
-      <h1>Enigma POS</h1>
-    </>
+      <MainView />
   )
 }

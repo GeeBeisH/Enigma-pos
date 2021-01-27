@@ -1,0 +1,103 @@
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), #b7c498);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 94vh;
+}
+
+body {
+  margin: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #583d3d;
+}
+
+button:focus {
+  outline:0;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+// --- CSS GRID --- //
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: [col1-start] 255px  [col2-start] 655px  [col3-start] 210px [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] 79vh [row2-end];
+    // background-color: #fff;
+    color: #444;
+  }
+
+  .box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+
+  }
+  
+  .information_view {
+    padding: 10px;
+    border: solid 2px black;
+    grid-column: col3-start ;
+    grid-row: row1-start
+  }
+
+  .tab_view {
+    padding: 10px;
+    border: solid 2px black;
+    grid-column: col3-start ;
+    grid-row: row2-start /row-2end
+  }
+
+  .customer_view {
+    border: solid 2px black;
+    padding: 10px;
+    grid-column: col1-start / col3-start;
+    grid-row: row1-start ;
+  }
+  .product_range {    
+    border: solid 2px black;
+    padding: 10px;
+    grid-column: col1-start;
+    grid-row: row2-start ;
+  }
+
+  .product_item {
+        
+    border: solid 2px black;
+    padding: 10px;
+    grid-column: col2-start ;
+    grid-row: row2-start ;
+  }
+
+.product_item button{
+  color:#583d3d;  
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), #b7c498);
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  margin: 0 10px 10px 0;
+  border: none;
+  box-shadow: 4px 4px rgba(179, 165, 165, 0.342);
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.product_range button{
+  color:#583d3d;  
+  background-image: linear-gradient(to bottom, rgba(255,0,0,0), #c4b698);
+  border-radius: 10px;
+  height: 80px;
+  width: 80px;
+  margin: 0 10px 10px 0;
+  border: none;
+  box-shadow: 4px 4px rgba(179, 165, 165, 0.342);
+  font-weight: 600;
+  text-transform: capitalize;
+}
